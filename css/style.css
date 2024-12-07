@@ -15,11 +15,18 @@ body{
   font-family: "Outfit", serif;
 }
 
+a{
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
 
 .container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding: 80px 40px 60px;
 }
 
 .logo{
@@ -33,30 +40,80 @@ body{
 
 }
 
+.logo-text{
+  margin-top: 7px;
+
+}
+.yellow{
+  color: #e9a817;
+}
 .nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 0px 0px;
 }
 
-.nav-list{
+.nav-container{
+  padding: 0px;
+}
+
+.nav-list-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 100%;
+  gap: 4px;
+  margin-top: 6px;
+
+}
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 100px;
 }
 
+.nav-link{
+  margin: 0 10px;
+  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 18px;
+}
+.btn-nav-container{
+  display: flex;
+  gap: 8px;
+}
 
-button{
+.btn{
   border-radius: 10px;
-  opacity: 1;
-  background: yellow;
-  color: white;
+  text-align: center;
+  display: inline-flex;
+  padding: 7px 25px;
 }
 
+
+
+
+
+
+.waitlist-btn{
+  background: #e9a817;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.contact-btn{
+  background: #eaeced;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+}
 
 
 
@@ -78,16 +135,46 @@ button{
   .container {
     max-width: 960px;
   }
+
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1100px;
   }
+}
+@media (max-width: 1200px) {
+  .nav-list{
+    padding-left: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .nav-list{
+    padding-left: 12px;
+  }
+  .nav-link{
+    padding: 8px 5px;
+  }
+  .nav-list-container{
+    padding-left: 0px;
+  }
+  .btn{
+    padding:  7px 15px;
+  }
+
+}
+@media (max-width: 768px) {
+
 }
 
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
+@media (max-width: 576px) {
+
 }
+
+
+
+
+
+
+
+
