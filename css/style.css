@@ -74,13 +74,13 @@ ul,li{
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding-left: 100px;
+  padding-left: 70px;
 }
 
 .nav-link{
   margin: 0 10px;
   color: #222;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   padding: 8px 18px;
 }
@@ -97,7 +97,24 @@ ul,li{
 }
 
 
+.home-title-container{
+  text-align: center;
+}
+.home-title-subtext{
+  font-size: 17px;
+  font-weight: 400;
+  color: #0000007d;
+  margin-top: 15px;
+  margin-bottom: 0px;
 
+}
+.home-title-text{
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1.1em;
+  letter-spacing: -2px;
+  margin: 0px auto 15px auto;
+}
 
 
 
@@ -115,6 +132,41 @@ ul,li{
   color: #222222;
 }
 
+.home-title-contact{
+  background: #e9a817;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+
+}
+
+.home-title-waitlist{
+  background: #eaeced;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+
+}
+
+.home-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.home-img{
+  width: 1100px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.info-bar{
+  height: 300px;
+  width: 100%;
+  background: #e9a817;}
 
 
 
