@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "~@flaticon/flaticon-uicons/css/all/all";
 
 
 html {
@@ -101,7 +102,7 @@ ul,li{
   text-align: center;
 }
 .home-title-subtext{
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   color: #0000007d;
   margin-top: 15px;
@@ -164,12 +165,33 @@ ul,li{
 }
 
 .info-bar{
-  height: 300px;
   width: 100%;
-  background: #e9a817;}
+  background: #e9a817;
+color:white;}
 
+.info-bar-container{
+  display: flex;
+  flex-direction: row;
+}
 
+.info-bar-item{
+  text-align: center;
+  padding: 0px 15px;
+  width: 33.3%;
+}
 
+.info-bar-title{
+  letter-spacing: 0.4px;
+}
+.info-bar-icon{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.info-bar-section-top{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 
 @media (min-width: 576px) {
   .container {
