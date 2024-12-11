@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "~@flaticon/flaticon-uicons/css/all/all";
 
 
 html {
@@ -15,11 +16,18 @@ body{
   font-family: "Outfit", serif;
 }
 
+a{
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
 
 .container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding: 80px 40px 60px;
 }
 
 .logo{
@@ -33,34 +41,157 @@ body{
 
 }
 
+.logo-text{
+  margin-top: 7px;
+
+}
+.yellow{
+  color: #e9a817;
+}
 .nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 0px 0px;
 }
 
-.nav-list{
+.nav-container{
+  padding: 0px;
+}
+
+.nav-list-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 100%;
+  gap: 4px;
+  margin-top: 6px;
+
+}
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 70px;
 }
 
+.nav-link{
+  margin: 0 10px;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 18px;
+}
+.btn-nav-container{
+  display: flex;
+  gap: 8px;
+}
 
-button{
+.btn{
   border-radius: 10px;
-  opacity: 1;
-  background: yellow;
-  color: white;
+  text-align: center;
+  display: inline-flex;
+  padding: 7px 25px;
+}
+
+
+.home-title-container{
+  text-align: center;
+}
+.home-title-subtext{
+  font-size: 18px;
+  font-weight: 400;
+  color: #0000007d;
+  margin-top: 15px;
+  margin-bottom: 0px;
+
+}
+.home-title-text{
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1.1em;
+  letter-spacing: -2px;
+  margin: 0px auto 15px auto;
 }
 
 
 
+.waitlist-btn{
+  background: #e9a817;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
 
+.contact-btn{
+  background: #eaeced;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+}
 
+.home-title-contact{
+  background: #e9a817;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+
+}
+
+.home-title-waitlist{
+  background: #eaeced;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+
+}
+
+.home-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.home-img{
+  width: 1100px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.info-bar{
+  width: 100%;
+  background: #e9a817;
+color:white;}
+
+.info-bar-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.info-bar-item{
+  text-align: center;
+  padding: 0px 15px;
+  width: 33.3%;
+}
+
+.info-bar-title{
+  letter-spacing: 0.4px;
+}
+.info-bar-icon{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.info-bar-section-top{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 
 @media (min-width: 576px) {
   .container {
@@ -78,16 +209,46 @@ button{
   .container {
     max-width: 960px;
   }
+
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1100px;
   }
+}
+@media (max-width: 1200px) {
+  .nav-list{
+    padding-left: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .nav-list{
+    padding-left: 12px;
+  }
+  .nav-link{
+    padding: 8px 5px;
+  }
+  .nav-list-container{
+    padding-left: 0px;
+  }
+  .btn{
+    padding:  7px 15px;
+  }
+
+}
+@media (max-width: 768px) {
+
 }
 
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
+@media (max-width: 576px) {
+
 }
+
+
+
+
+
+
+
+
