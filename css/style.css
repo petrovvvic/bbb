@@ -27,7 +27,7 @@ ul,li{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 80px 40px 60px;
+  padding: 80px 40px 0px;
 }
 
 .logo{
@@ -193,6 +193,72 @@ color:white;}
   padding-bottom: 30px;
 }
 
+.home{
+  margin-bottom: 20px;
+}
+
+.hyper-title-container{
+  text-align: left;
+
+}
+
+.hyper-title{
+  font-size:35px ;
+}
+
+.hyper-text{
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.hyper-text-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hyper-text-item{
+  width: 460px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 15px 0px;
+
+}
+.hyper-icon{
+  font-size: 18px;
+  color: #e9a817;
+  font-weight: 700;
+}
+
+.hyper-icon-text{
+  margin-bottom: 0px;
+}
+
+
+.about-us-title{
+  font-size: 35px;
+}
+
+.about-us-text{
+  font-size: 18px;
+}
+.about-us-container{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.about-us-btn-container{
+  text-align: center;
+}
+
+.about-us-btn{
+  padding: 16px 60px;
+  background: #e9a817;
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -235,13 +301,97 @@ color:white;}
   .btn{
     padding:  7px 15px;
   }
+  .home-img{
+    width: 768px;
+    height: 500px;
+  }
+  .home{
+    margin-bottom: 0px;
+  }
+  .home-title-container{
+    margin-top: 0px;
+  }
 
 }
 @media (max-width: 768px) {
+  .home-img{
+    width: 460px;
+    height: 380px;
+  }
+
+  .home-title-text{
+    font-size: 40px;
+  }
+  .home-image-container{
+    margin-top: 70px;
+  }
+
+  .nav-list-container{
+    display: none;
+  }
+  .home-container{
+    padding-top: 0px;
+  }
+  .nav{
+    text-align: center;
+    justify-content: center;
+  }
+  .logo-text{
+    font-size: 30px;
+  }
+
+
 
 }
 
 @media (max-width: 576px) {
+  .container{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+  }
+  .home-img{
+    width: 355px;
+    height: 260px;
+  }
+  .home-title-text{
+    margin-top: 15px;
+    font-size: 36px;
+  }
+  .home-title-subtext{
+    font-size: 15px;
+  }
+  .hyper-title{
+    font-size: 25px;
+  }
+  .about-us-title{
+    font-size: 25px;
+  }
+  .hyper-text{
+    font-size: 16px;
+  }
+  .hyper-section{
+    margin-bottom: 45px;
+  }
+  .about-us-container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .hyper-text-item{
+    padding-top: 0px;
+  }
+  .hyper-icon-text{
+    margin-top: 0px;
+  }
+
+  .about-us-text{
+    font-size: 16px;
+  }
+  .hyper-container{
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
 }
 
